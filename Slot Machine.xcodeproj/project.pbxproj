@@ -19,6 +19,9 @@
 		A688C69527083E620003AE1A /* game-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A688C68D27083E620003AE1A /* game-over.mp3 */; };
 		A688C69627083E620003AE1A /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A688C68E27083E620003AE1A /* spin.mp3 */; };
 		A688C69727083E620003AE1A /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A688C68F27083E620003AE1A /* background-music.mp3 */; };
+		A688C69D2708456B0003AE1A /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688C69C2708456B0003AE1A /* LogoView.swift */; };
+		A688C6A1270845B10003AE1A /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688C6A0270845B10003AE1A /* Modifiers.swift */; };
+		A688C6A3270849690003AE1A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688C6A2270849690003AE1A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		A688C68E27083E620003AE1A /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
 		A688C68F27083E620003AE1A /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
 		A688C69B27083EE00003AE1A /* Slot-Machine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Slot-Machine-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A688C69C2708456B0003AE1A /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		A688C6A0270845B10003AE1A /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		A688C6A2270849690003AE1A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +74,11 @@
 		A688C67927083D220003AE1A /* Slot Machine */ = {
 			isa = PBXGroup;
 			children = (
-				A688C69B27083EE00003AE1A /* Slot-Machine-Info.plist */,
 				A688C69927083E7B0003AE1A /* View */,
 				A688C69A27083E8E0003AE1A /* Helpers */,
 				A688C69827083E6C0003AE1A /* Sounds */,
 				A688C67A27083D220003AE1A /* Slot_MachineApp.swift */,
+				A688C69B27083EE00003AE1A /* Slot-Machine-Info.plist */,
 				A688C67E27083D240003AE1A /* Assets.xcassets */,
 				A688C68027083D240003AE1A /* Preview Content */,
 			);
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A688C67C27083D220003AE1A /* ContentView.swift */,
+				A688C69C2708456B0003AE1A /* LogoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +120,8 @@
 		A688C69A27083E8E0003AE1A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A688C6A0270845B10003AE1A /* Modifiers.swift */,
+				A688C6A2270849690003AE1A /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -195,7 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A688C6A3270849690003AE1A /* Extensions.swift in Sources */,
+				A688C6A1270845B10003AE1A /* Modifiers.swift in Sources */,
 				A688C67D27083D220003AE1A /* ContentView.swift in Sources */,
+				A688C69D2708456B0003AE1A /* LogoView.swift in Sources */,
 				A688C67B27083D220003AE1A /* Slot_MachineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
