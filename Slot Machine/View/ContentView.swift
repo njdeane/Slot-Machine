@@ -18,7 +18,7 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
       
       // INTERFACE
-      VStack(alignment: .center, spacing: 5) {
+      VStack(alignment: .center, spacing: 5) { 
         // HEADER
         LogoView()
         
@@ -52,6 +52,52 @@ struct ContentView: View {
         }
         
         // SLOT MACHINE
+        VStack(alignment: .center, spacing: 0) {
+          // Reel 1
+          ZStack {
+            ReelView()
+            Image("gfx-bell")
+              .resizable()
+              .modifier(ImageModifier())
+          }
+          
+          HStack(alignment: .center, spacing: 0) {
+            // Reel 2
+            ZStack {
+              ReelView()
+              Image("gfx-seven")
+                .resizable()
+                .modifier(ImageModifier())
+            }
+            
+            Spacer()
+            
+            // Reel 3
+            ZStack {
+              ReelView()
+              Image("gfx-cherry")
+                .resizable()
+                .modifier(ImageModifier())
+            }
+          }
+          .frame(maxWidth: 500)
+          
+         
+          
+          // Reel 4
+          
+          // Spin Button
+          Button(action: {
+            print("Spin the reels")
+          }) {
+            Image("gfx-spin")
+              .renderingMode(.original)
+              .resizable()
+              .modifier(ImageModifier())
+          }
+          
+        } //: Slot
+        .layoutPriority(2)
         
         // FOOTER
         Spacer()
